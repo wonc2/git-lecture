@@ -10,6 +10,7 @@
 10. git reflog를 쓰면 --hard 살릴수 있음
 
 11. git push, git pull(터미널에서 작업할때 .git이 있는 폴더로 들어가야함)
+12. git clone http:asdfasdf.git .    or    .git abc(폴더명)
 
 
 git add ~~.html // 파일 하나 올림
