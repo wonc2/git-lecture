@@ -1,0 +1,31 @@
+1. git init
+2. git config --global user.name = "name"
+3. git config --global user.email = "email"
+4. 적당히 파일 만들고 -> git add .    or   git add file.file
+5. git commit -m "커밋 메세지"
+6. 메세지 잘못 남겼으면 git commit --amend -m "수정된 커밋 메세지" // 마지막 메세지 바꿈
+7. git status 현재 상태 보기
+8. git log 커밋상태보기 (shortlog, log --oneline)
+9. --mixed는 add commit 해야함 --soft는 commit만 하면 됨, --hard는 그상태 그대로 돌아감(협업때 사용금지)
+10. git reflog를 쓰면 --hard 살릴수 있음
+
+11. git push, git pull(터미널에서 작업할때 .git이 있는 폴더로 들어가야함)
+
+
+git add ~~.html // 파일 하나 올림
+git add . // 전부올림
+git status // 상태보기
+
+git rm --cached ~~.html // add한거 다시 내림
+되돌리기 -- reset
+되돌리기 옵션 --reset --mixed(기본값, 변경내용 남김, unstage), --hard(다지움), --soft(mixed랑 비슷한데 stage)
+git reset HEAD^*(헤드부터 몇칸까지 돌아갈건지)
+git reset 커밋hash(3zbfzb8) 커밋hash 로 돌아감 
+
+잘못들어간거 빠져나가기 esc :q ??
+
+git commit -m "init"
+
+git log
+
+git commit --amend -m "inittt" // 마지막 메세지 바꿈 -> "inittt"
